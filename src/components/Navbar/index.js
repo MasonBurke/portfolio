@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lt navbar-dark bg-dark">
       <Link activeClassName="`is-active" to="`/`" className="navbar-brand" to="/">
-        Wikipedia Searcher
+       Mason Burke Portfolio
       </Link>
       <div>
         <ul className="navbar-nav">
