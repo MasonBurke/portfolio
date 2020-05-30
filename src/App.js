@@ -1,20 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import Navbar from "../src/components/Navbar"
-import ProfilePhoto from './components/ProfilePhoto.js';
-import Bio from "./components/Bio.js"
-
+import Navbar from "./components/Navbar"
+import Wrapper from "./components/Wrapper"
+import Home from "./components/pages/Home/Home"
+import Projects from './components/pages/Projects';
+import Contact from "./components/pages/Contact"
 
 function App() {
   return (
+<Wrapper> 
 <Router>
-  <div>
-<Navbar />
-  </div>
-<ProfilePhoto/>
-<Bio/>
+ 
+ <Navbar />
+<Route  exact path="/" component={Home} />
+<Route exact path="/projects" component={Projects} />
+<Route exact path="/contact" component={Contact} />
+
+
+
 </Router>
+</Wrapper>
   );
 }
 

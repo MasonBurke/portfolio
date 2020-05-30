@@ -1,19 +1,15 @@
 import React from "react"
-import Navbar from "./Navbar"
 import "./style.css"
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Proj from  "../../Photos/index2"
 
 function Projects() {
     return (    
 <>
-
+<Proj/>
 </>
 
 )
 }
-
-
-this.props.router.push("/project")
 
 
 
